@@ -1,0 +1,74 @@
+body {
+    margin:0;
+    display:grid;
+    grid-template-areas: 'header'
+                         'itens'
+                         'notificacoes'
+                         'contato'
+                         'footer';
+    grid-template-rows: 40vh 20vh 30vh 30vh 15vh;                
+}
+
+header {
+    border-top: 6px solid green;
+    grid-area: header;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header div {
+    width:40%;
+    display: flex;
+    align-items: flex-end;
+}
+
+header div img {
+ width: 200px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: greenyellow;
+}
+
+.itens {
+    background-color: white;
+    grid-area: itens;
+}
+
+.notificacoes {
+    background-color: blue;
+    grid-area: notificacoes;
+}
+
+.contato{
+    background-color: white;
+    grid-area: contato;
+}
+
+
+/*---- PC -----*/
+@media(max-width:1366px){
+    header {
+    background-image: url(imagens/banner.png);
+    background-size: 100%;
+    }
+}
+
+/*---- TABLET ----- */
+@media(max-width:732px){
+    header {
+    background-image: url(imagens/banner.png);
+    background-size: cover;
+    }
+}
+
+/*------ CELULAR ----- */
+@media(max-width:432px){
+    header {
+    background-image: url(imagens/banner.png);
+    background-size: cover;
+    width: 432px;
+    }
+}
