@@ -3,7 +3,7 @@ h1 {
     color: white;
     font-size: 40px;
 }
-
+ 
 h3 {
     font-weight: bold;
 }
@@ -16,7 +16,7 @@ body {
                          'notificacoes notificacoes notificacoes'
                          'contato contato contato'
                          'footer footer footer';
-    grid-template-rows: 50vh 40vh 50vh 60vh 15vh; 
+    grid-template-rows: 50vh 30vh 50vh 60vh 15vh; 
     font-family: 'Hind', sans-serif;
     color: grey;         
     font-size:12px;      
@@ -90,7 +90,6 @@ footer a {
 
 .blocao{
     width:70%;
-    margin-left:100px;
     background-color: white;
     display:flex;
 }
@@ -137,7 +136,7 @@ footer a {
 }
 
 .notificacoes p{
-    width:500px;
+    max-width:500px;
 }
 
 .notific{
@@ -277,7 +276,7 @@ input[type=submit] {
 }
 
 /*---- TABLET ----- */
-@media(max-width:732px){
+@media(max-width:768px){
     header {
     background-image: url(imagens/banner.png);
     background-size: cover;
@@ -302,6 +301,10 @@ input[type=submit] {
     .blocao{
         flex-direction: column;
     }
+    .inputs {
+        display: flex;
+        flex-direction: row;
+    }
     
 }
 
@@ -319,7 +322,7 @@ input[type=submit] {
         flex-direction: column;
     }
     .notificacoes{
-        width:50%;
+        width:60%;
         display:flex;
         justify-content: space-between;
         flex-direction: column;
@@ -329,6 +332,10 @@ input[type=submit] {
     }
     .blocao{
         flex-direction: column;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: row;
     }
 }
 
