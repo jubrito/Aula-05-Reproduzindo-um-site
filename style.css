@@ -16,7 +16,7 @@ body {
                          'notificacoes notificacoes notificacoes'
                          'contato contato contato'
                          'footer footer footer';
-    grid-template-rows: 50vh 30vh 50vh 60vh 15vh; 
+    grid-template-rows: 350px 400px 400px 400px 100px;
     font-family: 'Hind', sans-serif;
     color: grey;         
     font-size:12px;      
@@ -27,8 +27,9 @@ header {
     border-top: 6px solid #31D868;
     background-image: url(imagens/banner.png);
     background-size: cover;
+    background-size: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 
@@ -82,16 +83,16 @@ footer a {
 }
 
 .celular {
-    width:40%;
+    width: 180px;
     display: flex;
     align-items: flex-end;
 }
 
 
 .blocao{
-    width:70%;
     background-color: white;
     display:flex;
+    justify-content: space-evenly;
 }
 
 .blocao p{
@@ -104,6 +105,7 @@ footer a {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 250px
 }
 
 
@@ -130,7 +132,6 @@ footer a {
 }
 
 .notificacoes{
-    width:50%;
     display:flex;
     justify-content: space-between;
 }
@@ -140,15 +141,10 @@ footer a {
 }
 
 .notific{
-    width:200px;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    padding: 40px;
 }
 
 .imgnotific{
-    width:120px;
     height:180px;
     display:flex;
     justify-content: right;
@@ -252,29 +248,6 @@ input[type=submit] {
     border-radius: 1px 15px 15px 1px; 
   }
 
-/*---- PC -----*/
-@media(max-width:1366px){
-    header {
-    background-image: url(imagens/banner.png);
-    background-size: 100%;
-    }
-    section{
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-    }
-    .notificacoes{
-        width:50%;
-        display:flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    body {
-        grid-template-rows: 50vh 80vh 80vh 60vh 15vh;     
-    }
-}
-
 /*---- TABLET ----- */
 @media(max-width:768px){
     header {
@@ -289,14 +262,16 @@ input[type=submit] {
         align-items: center;
         flex-direction: column;
     }
+    .imgnotific {
+        justify-content: center;
+    }
     .notificacoes{
-        width:50%;
         display:flex;
         justify-content: space-between;
         flex-direction: column;
     }
     body {
-        grid-template-rows: 50vh 80vh 80vh 60vh 15vh;     
+        grid-template-rows: 350px 700px 550px 400px 80px;
     }
     .blocao{
         flex-direction: column;
@@ -304,15 +279,26 @@ input[type=submit] {
     .inputs {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+    .itens {
+        width: 300px;
+        padding: 20px;
     }
     
+    h3 {
+        text-align: center;
+    }
+    
+    .notificacoes p {
+        text-align: center;
+    }
 }
 
 /*------ CELULAR ----- */
 @media(max-width:432px){
     header {
     background-image: url(imagens/banner.png);
-    background-size: 100%;
     justify-content: space-around;
     }
     section{
@@ -320,15 +306,6 @@ input[type=submit] {
         justify-content: space-around;
         align-items: center;
         flex-direction: column;
-    }
-    .notificacoes{
-        width:60%;
-        display:flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    body {
-        grid-template-rows: 50vh 80vh 80vh 60vh 15vh;     
     }
     .blocao{
         flex-direction: column;
